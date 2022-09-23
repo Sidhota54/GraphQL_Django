@@ -1,0 +1,53 @@
+forntend - GrapQL
+----------------------------------------------
+👉️Get the data All() ,Filter() & by parameter
+----------------------------------------------
+
+👉️get all data
+query{
+  allCategory{
+		id
+    name
+  }
+}
+
+👉️with parameter
+query{
+  categoryByid(id:3){
+	id
+    	name
+  }
+}
+
+👉️one to many with parameter
+query($id: Int = 1)
+{
+  
+  allQuestion(id:$id){
+    title
+  }
+  allAnswers(id:$id){
+    answerText
+  }
+
+}
+-----------------------------------
+Mutation for Create ,update ,Delete
+-----------------------------------
+=============Create================
+mutation{
+  CreateCategory(name:"siddharth"){
+    category{
+      name
+    }
+  }
+}
+============Update=================
+
+
+
+
+
+============Delete=================
+
+

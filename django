@@ -1,0 +1,51 @@
+create a folder 
+past the env file into this folder
+
+create virtual Enviroment
+python3 -m venv myenv
+
+python env activate
+my env file name= "myenv"
+cd myenv
+source myenv/bin/activate
+
+create new project
+django-admin startproject Project_name .
+
+
+
+requirement.text file generate
+pip freeze > requirements.txt
+
+create app
+cd project_name/
+python3 manage.py startapp App_name
+
+add the app in your project 
+project_name > setting.py > 
+	👉️	Installed_Apps = [
+
+		    'Appname',
+		]
+
+runthe Project or Server
+Python3 manage.py runserver
+
+
+
+python django Migration
+python3 manage.py makemigrations App_name
+python3 manage.py migrate
+
+
+install grapqual
+
+pip install "graphene-django>=2.0"
+add to project
+setting.py > 
+	👉️	INSTALLED_APPS = (
+		    # ...
+		    'graphene_django',
+		)
+		
+		
